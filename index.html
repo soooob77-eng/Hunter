@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05070d">
+  <meta name="description" content="HUNTER ARCHIVE — 2078년 헌터 협회 비공개 기록 보관소">
+  <title>HUNTER ARCHIVE // 2078</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+  <div class="cursor-glow"></div>
+
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-box">
+      <div class="boot-logo">HUNTER<span>_</span>ARCHIVE</div>
+      <div id="boot-log" class="boot-log"></div>
+      <div class="boot-progress"><span id="boot-progress-bar"></span></div>
+      <div class="boot-status">INITIALIZING ARCHIVE...</div>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Hunter Archive home">
+      <span class="brand-mark">HA</span>
+      <span>
+        <strong>HUNTER ARCHIVE</strong>
+        <small>GLOBAL AWAKENED REGISTRY</small>
+      </span>
+    </a>
+
+    <nav>
+      <a href="#world">WORLD</a>
+      <a href="#gates">GATES</a>
+      <a href="#hunters">HUNTERS</a>
+      <a href="#timeline">TIMELINE</a>
+    </nav>
+
+    <div class="top-status">
+      <span class="status-dot"></span>
+      SYSTEM ONLINE
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="stars"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> CLASSIFIED // ACCESS LEVEL 04</div>
+        <p class="hero-code">ARCHIVE NODE / KR-SEOUL / 2078.09.20</p>
+        <h1>THE GATE<br><em>WAS NOT</em><br>AN ACCIDENT.</h1>
+        <p class="hero-copy">
+          2049년, 하늘이 갈라졌다.<br>
+          그날 이후 인류에게 <b>각성자</b>와 <b>게이트</b>라는 두 개의 이름이 생겼다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#world">ENTER ARCHIVE <span>↗</span></a>
+          <button class="btn btn-ghost" id="incidentBtn">READ INCIDENT LOG</button>
+        </div>
+      </div>
+
+      <div class="hero-orbit">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit-core"><span>GATE<br>01</span></div>
+      </div>
+
+      <div class="hero-data">
+        <div><span>COORDINATES</span><b>37.5665° N<br>126.9780° E</b></div>
+        <div><span>GATE ACTIVITY</span><b class="cyan">07</b></div>
+        <div><span>THREAT INDEX</span><b class="red">ELEVATED</b></div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>⚠ GATE ACTIVITY DETECTED</span>
+        <i></i><span>SEOUL SECTOR / CLASS-A ANOMALY</span>
+        <i></i><span>ARCHIVE SYNC 99.8%</span><i></i>
+        <span>AWAKENED REGISTRY: 18,492</span><i></i>
+        <span>⚠ GATE ACTIVITY DETECTED</span><i></i>
+      </div>
+    </section>
+
+    <section id="world" class="section">
+      <div class="section-heading">
+        <div>
+          <span class="section-no">01 / WORLD</span>
+          <h2>THE AWAKENING</h2>
+        </div>
+        <p>세계는 2049년 이전과 이후로 나뉜다.</p>
+      </div>
+
+      <div class="world-layout">
+        <article class="terminal-card">
+          <div class="card-top"><span>WORLD_EVENT_001</span><span>ARCHIVED</span></div>
+          <div class="terminal-body">
+            <p class="muted">$ connect /global/history</p>
+            <h3>FIRST GATE</h3>
+            <p>
+              2049년 06월 17일 03:14 UTC. 지구 상공에 최초의 공간 균열이 관측되었다.
+              72시간 후, 균열에서 미지의 생명체가 출현했다.
+            </p>
+            <p>
+              그리고 11일째 되는 날, 최초의 <strong>각성자(Awakened)</strong>가 나타났다.
+            </p>
+            <div class="terminal-line"><span>></span> 사건 분류가 변경되었습니다: <b>HUMANITY / POST-GATE ERA</b></div>
+          </div>
+        </article>
+
+        <div class="stats-panel">
+          <div class="stat"><span>FIRST GATE</span><strong>2049</strong><small>JUN / 17</small></div>
+          <div class="stat"><span>REGISTERED HUNTERS</span><strong>18,492</strong><small>GLOBAL</small></div>
+          <div class="stat"><span>ACTIVE GATES</span><strong>07</strong><small>24H MONITORING</small></div>
+          <div class="stat"><span>UNRESOLVED</span><strong class="red">13</strong><small>CLASS S+</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gates" class="section dark-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-no">02 / GATES</span>
+          <h2>DIMENSIONAL ANOMALIES</h2>
+        </div>
+        <p>관측된 게이트 중 일부는 아직 내부 구조조차 해독되지 않았다.</p>
+      </div>
+
+      <div class="gate-grid">
+        <article class="gate-card featured" data-gate="GATE-001">
+          <div class="gate-radar"></div>
+          <div class="gate-info">
+            <span class="gate-id">GATE-001 / SEOUL</span>
+            <h3>THE BLACK DOOR</h3>
+            <p>최초의 S급 게이트. 봉쇄 상태가 27년째 유지되고 있다.</p>
+            <div class="tag-row"><span>S-RANK</span><span>SEALED</span><span>UNKNOWN</span></div>
+          </div>
+          <button class="icon-btn gate-detail" aria-label="Open gate details">↗</button>
+        </article>
+
+        <article class="gate-card" data-gate="GATE-017">
+          <div class="gate-number">017</div>
+          <div class="gate-info">
+            <span class="gate-id">GATE-017 / TOKYO</span>
+            <h3>RED MAZE</h3>
+            <p>진입한 모든 탐사팀이 동일한 좌표로 귀환했다.</p>
+            <div class="tag-row"><span>A-RANK</span><span>ACTIVE</span></div>
+          </div>
+          <button class="icon-btn gate-detail" aria-label="Open gate details">↗</button>
+        </article>
+
+        <article class="gate-card" data-gate="GATE-042">
+          <div class="gate-number">042</div>
+          <div class="gate-info">
+            <span class="gate-id">GATE-042 / BERLIN</span>
+            <h3>THE SLEEPER</h3>
+            <p>게이트 자체에서 생명 반응이 감지되고 있다.</p>
+            <div class="tag-row"><span>S-RANK</span><span>OBSERVE</span></div>
+          </div>
+          <button class="icon-btn gate-detail" aria-label="Open gate details">↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="hunters" class="section">
+      <div class="section-heading">
+        <div>
+          <span class="section-no">03 / HUNTERS</span>
+          <h2>AWAKENED REGISTRY</h2>
+        </div>
+        <p>국제 헌터 협회에 등록된 각성자 데이터베이스.</p>
+      </div>
+
+      <div class="hunter-grid">
+        <article class="hunter-card">
+          <div class="portrait portrait-one"><span>01</span></div>
+          <div class="hunter-info">
+            <span class="rank">S-RANK / KOREA</span>
+            <h3>HAN SEO-JIN</h3>
+            <p>ABILITY // NULL FIELD</p>
+            <div class="meter"><span style="width:96%"></span></div>
+            <small>THREAT ASSESSMENT / 96%</small>
+          </div>
+        </article>
+
+        <article class="hunter-card">
+          <div class="portrait portrait-two"><span>07</span></div>
+          <div class="hunter-info">
+            <span class="rank">A-RANK / JAPAN</span>
+            <h3>KUROSAWA REN</h3>
+            <p>ABILITY // VECTOR</p>
+            <div class="meter"><span style="width:81%"></span></div>
+            <small>THREAT ASSESSMENT / 81%</small>
+          </div>
+        </article>
+
+        <article class="hunter-card">
+          <div class="portrait portrait-three"><span>13</span></div>
+          <div class="hunter-info">
+            <span class="rank">S-RANK / UNKNOWN</span>
+            <h3>“ORACLE”</h3>
+            <p>ABILITY // █████████</p>
+            <div class="meter danger"><span style="width:99%"></span></div>
+            <small>IDENTITY / REDACTED</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="timeline" class="section dark-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-no">04 / TIMELINE</span>
+          <h2>THE POST-GATE ERA</h2>
+        </div>
+        <p>인류가 기록한 29년의 사건.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item active">
+          <span class="year">2049</span>
+          <div><b>FIRST GATE</b><p>최초의 공간 균열 발생. 인류의 시대가 종료되었다.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2050</span>
+          <div><b>AWAKENING</b><p>최초의 각성자 확인. 능력자 등록 제도가 시작된다.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2054</span>
+          <div><b>GATE WAR</b><p>국경을 넘어 확장된 게이트로 첫 국제전 발발.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2061</span>
+          <div><b>SECTOR-7 INCIDENT</b><p>정부 기록에서 삭제된 43분. 생존자는 단 한 명.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2078</span>
+          <div><b>NOW</b><p>현재. 그리고 어제, 새로운 게이트가 하나 더 열렸다.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">HUNTER<span>_</span>ARCHIVE</div>
+    <p>UNAUTHORIZED ACCESS WILL BE LOGGED.</p>
+    <div id="clock">00:00:00</div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button id="modalClose" class="modal-close">×</button>
+      <span id="modalKicker" class="section-no">INCIDENT LOG</span>
+      <h2 id="modalTitle">SECTOR-7 INCIDENT</h2>
+      <div id="modalContent" class="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
